@@ -65,7 +65,6 @@ public class TextoDelimitado {
             String leido = leer.readLine();
             String[] partes = leido.split("\t");
             for (int i = 0; i < partes.length; i++) {
-                //Cada caso corresponde a un atributo do obxecto
                 switch (i) {
                     case 0:
                         p.setCodigo(partes[i]);
