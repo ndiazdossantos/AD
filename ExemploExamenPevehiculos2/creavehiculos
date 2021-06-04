@@ -1,0 +1,40 @@
+// conecto a mongo dende un terminal  :mongo
+// vou crear colecion vendas dentro da base test
+// COPIAR e PEGAR no TERMINAL  cliente de MONGO DENDE AQUI ata o seguinte comentario
+
+use basevehiculos
+db.vehiculos.remove({})
+db.clientes.remove({})
+var vehiculos=
+[
+{_id:"v1", nomveh:"hyundai", prezoorixe: 12000,anomatricula:  2013},
+{_id:"v10", nomveh:"audi", prezoorixe: 21000,anomatricula:  2011},
+{_id:"v2", nomveh:"honda", prezoorixe: 21000,anomatricula:  2015},
+{_id:"v3", nomveh:"seat", prezoorixe: 10000,anomatricula:  2019},
+{_id:"v4", nomveh:"renault", prezoorixe: 19000,anomatricula:  2000},
+{_id:"v5", nomveh:"citroen", prezoorixe: 20000,anomatricula:  2009},
+{_id:"v6", nomveh:"volvo", prezoorixe: 9000,anomatricula:  2004},
+{_id:"v7", nomveh:"mercedes", prezoorixe: 11000,anomatricula:  2007},
+{_id:"v8", nomveh:"jaguar", prezoorixe: 13000,anomatricula:  2010},
+{_id:"v9", nomveh:"mazda", prezoorixe: 9000,anomatricula:  2015}
+]
+db.vehiculos.insert(vehiculos)
+var clientes=
+[
+{_id:"3610d", nomec:"zoila", ncompras: 0},
+{_id:"361a", nomec:"luis", ncompras: 0},
+{_id:"362b", nomec:"pedro", ncompras: 1},
+{_id:"363c", nomec:"paula", ncompras: 2},
+{_id:"364d", nomec:"eva", ncompras: 1},
+{_id:"365e", nomec:"jairo", ncompras: 0},
+{_id:"366f", nomec:"xiu", ncompras: 3},
+{_id:"367g", nomec:"jhon", ncompras: 1},
+{_id:"368h", nomec:"ainara", ncompras: 0},
+{_id:"369k", nomec:"uxia", ncompras: 1}
+]
+db.clientes.insert(clientes)
+
+
+//ATA AQUI
+// observacions:
+// lembra que cando leas dende java   datos numericos creados en mongo debes lelos como Double 

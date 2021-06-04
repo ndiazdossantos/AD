@@ -1,0 +1,19 @@
+// conecto a mongo dende un terminal  :mongo
+// vou crear colecion vendas dentro da base test
+// COPIAR e PEGAR no TERMINAL  cliente de MONGO DENDE AQUI ata o seguinte comentario
+
+use test
+db.vendas.remove({})
+var vendas=
+[
+{_id:1 ,dni:"364d",codveh: "v1"},
+{_id:2 ,dni: "361a",codveh:"v5"},
+{_id:3 ,dni: "363c",codveh: "v7"},
+{_id:4 ,dni: "366f",codveh:"v9"}
+]
+db.vendas.insert(vendas)
+
+
+//ATA AQUI
+// observacions:
+// lembra que cando leas dende java   datos numericos creados en mongo debes lelos como Double 
